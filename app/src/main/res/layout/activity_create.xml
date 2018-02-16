@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sarthak.todo.create">
+
+    <ImageView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/ic_fiber_new_white_24px" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="?attr/actionBarSize"
+        android:gravity="center"
+        android:text="New Task"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <Button
+
+        android:id="@+id/create"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_done_white_24px"
+        android:padding="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/content_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar">
+
+        <ImageView
+            android:id="@+id/task_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/task" />
+
+        <TextView
+
+            android:id="@+id/hint_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="20dp"
+            android:text="What is to be done ?"
+            android:textColor="#ec6f6f" />
+
+        <EditText
+            android:id="@+id/task"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+
+            android:layout_alignStart="@id/task_icon"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center|left"
+            android:hint="Enter Your Task Here"
+            android:padding="2dp"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/hint_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="What date is it to be done?"
+            android:textColor="#ec6f6f" />
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_below="@id/task_icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/date" />
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:layout_below="@id/task_icon"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center|left"
+            android:hint="Select Date"
+            android:padding="2dp"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/hint_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:text="What time is it to be done?"
+            android:textColor="#ec6f6f" />
+
+        <ImageView
+            android:id="@+id/icon_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/time" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+                android:focusable="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="230dp"
+            android:hint="Select TIme" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
